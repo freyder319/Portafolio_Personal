@@ -1,0 +1,90 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+  background: linear-gradient(to bottom, #6a0dad, #000000);
+  background-repeat: no-repeat;
+  background-size: cover; /* ✅ Esto sí se adapta al crecimiento del contenido */
+}
+
+.tittle1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -4px;
+    user-select: none;
+    font-size: 90px;
+    caret-color: transparent; 
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    animation: fadeIn 1s ease-out forwards;
+}
+.tittle2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -4px;
+    user-select: none;
+    font-size: 40px;
+    caret-color: transparent; 
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    animation: fadeIn 1s ease-out forwards;
+}
+.tittle3{
+    font-family: "Poppins", sans-serif;
+    font-weight:100;
+    font-style: normal;
+    letter-spacing: -4px;
+    user-select: none;
+    font-size: 50px;
+    caret-color: transparent; 
+    color: white;
+    text-shadow: 1px 1px 10px white;
+    animation: fadeIn 1s ease-out forwards;
+}
+footer{
+    background-color: #00000050;
+}
+.linea{
+    border: none;
+    height: 1px;
+    background-color: #ccc; /* gris claro */
+    width: 100%;
+}
+.sobreEl{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.nav-icons{
+    padding: 10px;
+    color: white;
+}
+.icons{
+    color: white;
+}
+.imagen-fade {
+  width: 400px;
+  height: auto;
+  filter: drop-shadow(0 5px 15px #6a0dad);
+  mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 40%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    animation: fadeIn 1s ease-out forwards;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
